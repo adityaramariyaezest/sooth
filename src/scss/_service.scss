@@ -1,0 +1,54 @@
+@use './partials/_index.scss' as *;
+@use './partials/mixins/index' as *;
+
+
+$gap: $spacer * 2;
+
+.service {    
+    padding: $spacer * 6 0;
+    background: $gray-lightest;
+
+    &-wrapper {
+        @include dflex(column);
+        align-items: center;
+        justify-self: center;
+        gap: $spacer * 7;
+        text-align: center;
+
+        @media(min-width: $tablet) {
+            flex-direction: row;
+            gap: $spacer * 3;
+        }
+    }
+
+    &-item {
+        @media(min-width: $tablet) {
+            @include flex(33.33%, $gap);
+        }
+
+        > svg {
+            width: 30px;
+            height: 30px;
+
+            > path {
+                color: $pink;
+            }
+        }
+
+        > a {
+            text-decoration: underline;
+            font-size: $base-font-small;
+            font-weight: 400;
+        }
+    }
+
+
+    &-description {
+        font-size: $base-font;
+        max-width: 150px;
+        margin: $spacer * 2 auto;
+        font-weight: 600;    
+    }
+
+   
+}

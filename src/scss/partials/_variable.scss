@@ -1,0 +1,53 @@
+// colors
+
+$cape-pallser: #A67744;
+$beige: #F7F5E6;
+$albasterr : #F7F7F7;
+$athens: #EEF2F4;
+$siler-rust: #C6B9B6;
+$oxfort-blue: #354E57;
+$como: #547665;
+$mischka: #D7CCDD;
+$rangltoto: #2E2E22;
+$punch: #DE3B35;
+$blue: #0014FF;
+$white: #FFFFFF;
+
+
+// responsive breakpoints
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1024px;
+$desktop-md: 1280px;
+$desktop-lg: 1440px;
+$desktop-xl: 1920px;
+
+// fonts
+$base-font: 14px;
+$base-font-small: $base-font - 2;
+$base-font-large: $base-font + 2;
+$font-family:'Montserrat', sans-serif;
+
+// colors
+$green: $como;
+$pink: $siler-rust;
+$brown: $cape-pallser;
+$body-bg: #E2E6E9;
+$color: $oxfort-blue;
+$border-color: $color;
+
+// dark shades
+$gray-dark: $rangltoto;
+
+// light gray shades 
+$gray-light: #EEF3F4;
+$gray-lighter: $mischka;
+$gray-lightest: $athens;
+
+//light shades 
+$white-light: $albasterr;
+
+// spacers
+$spacer: 10px;
+$padding-x: 15px;
+$padding-y: $padding-x;

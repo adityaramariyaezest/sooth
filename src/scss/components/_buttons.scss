@@ -1,0 +1,49 @@
+@use '../partials/variable' as *;
+
+.btn {
+    border: 1px solid $border-color;
+    color: $gray-dark;
+    text-align: left;
+    letter-spacing: 0px;
+    padding: 8px 20px;
+    background:transparent;
+    font-size: $base-font;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    > svg {
+        display: none;
+    }
+
+    @media(min-width: $tablet) {
+        > svg {
+            display: inline-block;
+            margin-right: $spacer;
+        }
+    }
+
+    &-block {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    &-light {
+        border-color: $white;
+        color: $white;
+    }
+
+    &-primary {
+        background: $brown;
+        color: $white;
+    }
+
+    &-brown {
+        border-color: $brown;
+    }
+
+    &:hover {
+       
+    }
+}

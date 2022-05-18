@@ -1,0 +1,54 @@
+@use './partials/index' as *;
+@use './partials/mixins/index' as *;
+@use './partials/extends/index' as *;
+
+$gap: $spacer * 2;
+
+.image-tiles {
+
+    &-wrapper {
+        padding-top: $spacer * 10;
+        padding-bottom: $spacer * 10;
+        text-align: center
+    }
+
+    &-list {
+        @include dflex(column);
+        margin-top: $spacer * 10;
+        gap: $gap;
+
+        @media(min-width: $tablet) {
+            flex-direction: row;
+        }
+    }
+
+    &-img {
+        max-width: 100%;
+        height: 250px;
+        @extend %centered;
+        img {
+            height: 100%
+        }
+    }
+
+    &-item {
+        text-align: center;
+
+        @include flex(100%, $gap); 
+
+
+        @media(min-width: $tablet) {
+            @include flex(50%, $gap); 
+        }
+
+        @media(min-width: $desktop) {
+            @include flex(33.33%, $gap); 
+        }
+    }
+
+    &-title {
+        font-weight: bold;
+        color: $color;
+    }
+
+}

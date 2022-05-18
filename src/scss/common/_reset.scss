@@ -1,0 +1,16 @@
+@use '../partials/_variable' as *;
+
+body {
+    background-color: $white-light;
+    font-size: $base-font;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+

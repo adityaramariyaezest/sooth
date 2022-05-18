@@ -1,0 +1,11 @@
+@use './partials/_index.scss' as *;
+
+.banner-offer {
+    background-color: $brown;
+    text-align: center;
+    color: $white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: $spacer * 1.5;
+}

@@ -1,0 +1,105 @@
+@use './partials/_index.scss' as *;
+@use './partials/extends/index' as *;
+@use './partials/mixins/index' as *;
+
+$gap : $spacer * 3;
+
+.product {
+    &-wrapper {
+        padding-top: $spacer * 5;
+        padding-bottom:  $spacer * 5;
+    }
+
+    &-header {
+        display: none;
+        @media(min-width: $tablet) {
+            @include justify-content-between(space-between);
+            @include align-center;
+            margin-bottom: $spacer;
+
+            p, a {
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+        }        
+    }
+
+    &-list {
+        @include dflex;
+        gap: $gap $gap / 2;
+
+        @media( min-width: $desktop ) {
+            gap: $gap * 3 $gap;
+        }
+    }
+
+    &-item {
+        @include flex(50%, $gap);
+    
+        @media(min-width: $tablet) {           
+            @include flex(25%, $gap);
+        }
+
+        .btn {
+            font-weight: 400;
+            font-size: $base-font-small;
+        }
+    }
+
+    &-image {
+        @extend %centered;
+        align-items: flex-end;
+        background-color: $white;    
+        margin-bottom: $spacer * 1.5;   
+        height: $spacer * 25; 
+        position: relative;
+
+        @media(min-width: $tablet) {
+            height:$spacer*30;
+            position:relative;
+        }
+
+        img {
+            height: 200px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &-offer {
+        display: none;
+        @media(min-width: $tablet) {
+            padding: 5px 8px;
+            background: $white-light;
+            font-size: $base-font - 2; 
+            display: flex;
+            position: absolute;
+            top: $spacer * 1.2;
+            left: $spacer * 1.5;
+            color: $color;
+            font-weight: 500;
+        }
+    }
+
+    &-details {
+        line-height: 1.2;
+    }
+
+    &-name, &-des {
+        margin-bottom: $spacer/2;
+    }
+
+    &-name {
+        font-weight: bold;
+    }
+
+    &-des {
+        font-size: $base-font-small;
+    }
+
+    &-price {
+        display: block;
+        margin-bottom: $spacer * 1.5;
+        font-size: $base-font-small;
+        margin-top: $spacer;
+    }
+}

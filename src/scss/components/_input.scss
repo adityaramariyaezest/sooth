@@ -1,0 +1,49 @@
+@use '../partials/index' as *;
+
+.form-control {
+    height: 40px;
+    padding: 5px 8px;
+    min-width: 300px;
+    border-radius: 0;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: nowrap;
+
+    .form-control {
+        background-color: transparent;
+        border: 1px solid $white;
+    }
+
+    .btn {
+        border-left: 0;
+    }
+
+    &--transparent {
+        .form-control {
+            color: $white;           
+        }
+
+        ::-webkit-input-placeholder { /* Edge */
+            color: $white;
+          }
+        ::placeholder {
+            color: $white;
+        }
+    }
+
+    &--primary {
+        .form-control {
+            border-color: $brown;
+            color: $color;
+        }
+
+        ::-webkit-input-placeholder { /* Edge */
+            color: $color;
+          }
+        ::placeholder {
+            color: $color;
+        }
+    }
+}

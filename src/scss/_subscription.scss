@@ -1,0 +1,64 @@
+@use './partials/_index' as *;
+@use './partials/mixins/index' as *;
+
+$gap: $spacer * 2;
+
+.subscription {
+    background-color: $white;
+    padding: $spacer*3.5 0;
+
+   
+    &-form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        gap: $gap;
+
+        > * {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &-title {
+        @media(min-width: $tablet) {
+           @include flex(25%, $gap);
+           padding-right: $gap;
+        }
+    }
+
+    &-text {
+        border-top: 1px solid $gray-lighter;
+        padding-top: $gap;
+
+        @media(min-width: $tablet) {
+            @include flex(25%, $gap);
+            border-left: 1px solid $gray-lighter;
+            border-top: 0;
+            padding-left: $gap;
+            padding-top: 0;
+
+        }
+        margin-bottom: 0;
+    }
+
+    &-newsletter {
+        @media(min-width: $desktop) {
+            @include flex(50%, $gap);
+        }
+
+        .input-group {
+            flex-direction: row-reverse;
+
+            @media(min-width:$tablet) {
+                flex-direction: row;
+            }
+        }
+
+
+    }
+
+   
+
+
+}

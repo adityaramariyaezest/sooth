@@ -1,0 +1,78 @@
+@use './partials/_index.scss' as *;
+@use  './partials/mixins/_index.scss' as *;
+
+.banner {
+    // background-image: url('../../public/images/Sooth_mobile_home/header-hands.png');
+    // background-repeat: no-repeat;  
+    // background-position: top right;
+    // background-size: contain;
+
+    // @media(min-width: $tablet){
+    //     background-image: url('../../public/images/Sooth_mobile_home/header-hands-3x.png');
+    //     background-position: 100% 100%;
+    //     background-size: cover;
+    // }
+
+    background: $body-bg;
+    padding-top: $spacer * 3;
+
+    @media(min-width: $tablet) {
+        padding-top: $spacer * 6;
+    }
+
+}
+
+.hero-banner {
+   @include dflex(column);
+    align-items: stretch;
+    min-height: $spacer * 55;
+    padding-bottom: $spacer * 2.2;
+
+    @media (min-width: $tablet) {
+        min-height: $spacer * 55;
+        flex-direction: row;
+    }
+
+    &-content {
+        align-items: center;
+        align-self: center;
+
+        > p {
+            font-size: $base-font-large;
+            line-height: 1.4;
+            margin-bottom: $spacer * 2.8;
+        }
+       @media(min-width: $tablet) {
+        width: 445px;        
+       }       
+    }
+
+    &-image {
+        background-image: url('../../public/images/Sooth_mobile_home/ezcema@3x.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        align-self: stretch;
+        align-items: stretch;
+        flex: 1;
+        background-size: contain;
+
+        @media(min-width: $tablet) {
+            order: 2;
+        }
+    }
+
+    &-category {
+        padding: 5px 8px;
+        background: $white-light;
+        font-size: $base-font - 2;        
+    }
+
+    &-button {
+        text-align: center;
+
+        @media(min-width: $tablet) {
+            text-align: left;
+        }
+    }
+}

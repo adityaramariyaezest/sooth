@@ -1,0 +1,21 @@
+@mixin flex($size, $gap) {
+    flex: calc($size - $gap);
+    width: calc($size - $gap);
+}
+
+$direction: row !default;
+
+@mixin dflex($direction: row) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: $direction;
+}
+
+@mixin justify-content-between($justify-content) {
+    @include dflex();
+    justify-content: $justify-content;
+}
+
+@mixin align-center($align-center: center) {
+    align-items: $align-center;
+}

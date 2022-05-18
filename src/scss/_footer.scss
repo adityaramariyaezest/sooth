@@ -1,0 +1,116 @@
+@use './partials/index' as *;
+@use './partials/extends/index' as *;
+@use './partials/mixins/index' as *;
+
+
+footer {
+    background-color: $color;
+    padding-top: $spacer * 8.4;
+    padding-bottom: $spacer * 14.9;
+
+
+    .footer {
+        @include dflex(column);
+
+        @media(min-width: $desktop) {
+            flex-direction: row;
+        }
+        &-form {
+            flex: 0 0 50%;
+            order: 2;
+
+            @media(min-width: $desktop) {
+                order: 0;
+            }
+        }
+
+        &-logo {
+            margin-bottom: $spacer * 5;
+            display: block;
+
+            .logo {
+                font-size: $base-font-large * 3.375;                
+                display: block;
+            }
+
+            p {
+                font-size: $base-font-large;
+            }
+
+            a, p {
+                color: $white;
+            }
+        }
+    
+        &-links {
+            @include dflex;
+            flex:  0 0 50%;
+            align-items: flex-end;          
+        }
+    
+        &-nav {
+            flex: 0 0 50%;
+            margin-bottom: $spacer * 6 ;
+
+            @media( min-width: $tablet) {
+                flex:  0 0 33.33%;
+            }
+
+            @media(min-width: $desktop) {
+                margin-bottom: 0;
+            }
+
+            > p {
+                text-transform: uppercase;
+                color: $white;
+                font-weight: 500;
+                font-size: $base-font-large;
+            }
+
+            &-links {
+                color: $white;
+
+                li > a {
+                    color: $white;
+                    line-height: 1.4;
+                    display: block;
+                    margin: $spacer/2 0;
+                }
+
+                &--row {                
+                    @include dflex;
+                    gap: $spacer * 3;
+
+                    li > a {
+                        text-decoration: underline;
+                        font-size: $base-font-large;
+                    }
+                }
+            }
+        }
+
+        &-extra {
+           @include dflex;
+            width: 100%;
+            flex: 1 1 100%;
+            padding-top: 50px;
+            border-top: 1px solid $white;
+            margin-top: 50px;
+            order: 3;
+
+            p{
+                color: $white;
+                text-transform: uppercase;
+                font-size: $base-font-large;               
+
+            }
+
+            &-wrapper {
+                @include justify-content-between(space-between);
+                @include align-center;
+                flex: 1 1 100%;
+                gap: $spacer * 3;
+            }
+        }
+    }
+}
