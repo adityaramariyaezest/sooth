@@ -17,6 +17,10 @@ $gap: $spacer * 2;
         > * {
             display: flex;
             align-items: center;
+
+            @media(max-width: $tablet) {
+                flex: 1 1 100%;
+            }
         }
     }
 
@@ -49,6 +53,7 @@ $gap: $spacer * 2;
 
         .input-group {
             flex-direction: row-reverse;
+            width: 100%;
 
             @media(min-width:$tablet) {
                 flex-direction: row;
