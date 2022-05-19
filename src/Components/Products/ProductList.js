@@ -1,11 +1,11 @@
 import Product from "./ProductTeaser";
 import ProductListHeader from "./ProductHeader";
 
-const ProductList = ({ category, products }) => {
+const ProductList = ({ category, products, mobileCarousel }) => {
     return (
         <div className="product-wrapper container">
             <ProductListHeader category={category} />
-            <div className="product-list">
+            <div className="product-list" data-mobile-carousel={mobileCarousel}>
                 {
                     products && products.map(({ id, img, offer, name, description, price }) => {
                         return (

@@ -30,7 +30,7 @@ $gap : $spacer * 3;
 
         @media( min-width: $desktop ) {
             gap: $gap * 3 $gap;
-        }
+        }        
     }
 
     &-item {
@@ -102,4 +102,20 @@ $gap : $spacer * 3;
         font-size: $base-font-small;
         margin-top: $spacer;
     }
+}
+
+// products horizontal scroll for mobile
+
+@media(max-width: $tablet) {
+    [data-mobile-carousel = "true"] {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: $spacer * 2;
+        gap: $spacer * 3;
+        .product {
+            &-item {
+                min-width: 280px;
+            }
+        }
+    }    
 }

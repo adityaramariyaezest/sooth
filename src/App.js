@@ -52,6 +52,7 @@ function App() {
           <ProductList
             category="Recommended"
             products={popularProducts}
+            mobileCarousel='true'
           />
 
           <ImageTilesList tiles={tiles} />
