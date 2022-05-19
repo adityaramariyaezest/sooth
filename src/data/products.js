@@ -113,37 +113,37 @@ export const topRatedProducts = [
 export const tiles = [
     {
         id: 1,
-        image: 1,
+        image: 'acne_Cream@3x',
         title: 'Cacao',
         description: 'Lorem ipsum dolar et al'
     },
     {
         id: 2,
-        image: 2,
+        image: 'psoriasis_treatment@3x',
         title: 'Honey',
         description: 'Lorem ipsum dolar et al'
     },
     {
         id: 3,
-        image: 3,
+        image: 'vitiligio_Balm@3x',
         title: 'Mint',
         description: 'Lorem ipsum dolar et al'
     },
     {
         id: 4,
-        image: 6,
+        image: 'ezema_dropper@3x',
         title: 'Coconut root',
         description: 'Lorem ipsum dolar et al'
     },
     {
         id: 5,
-        image: 5,
+        image: 'suburn1-1@3x',
         title: 'Flour',
         description: 'Lorem ipsum dolar et al'
     },
     {
         id: 6,
-        image: 6,
+        image: 'ezema_dropper@3x',
         title: 'Cacao',
         description: 'Lorem ipsum dolar et al'
     }

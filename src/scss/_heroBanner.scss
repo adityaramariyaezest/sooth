@@ -56,9 +56,11 @@
         align-items: stretch;
         flex: 1;
         background-size: contain;
+        min-height: 230px;
 
         @media(min-width: $tablet) {
             order: 2;
+            min-height: unset;
         }
     }
 
