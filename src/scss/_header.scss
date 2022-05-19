@@ -17,8 +17,7 @@ a {
 
 header {
     padding-bottom: $spacer;
-    background-color: $body-bg; 
-    
+    background-color: $body-bg;     
     padding-top: $spacer * 3;
     
     @media(min-width: $tablet) {
@@ -28,7 +27,7 @@ header {
     > div {
         @include justify-content-between(space-between);
         @include align-center;
-
+        gap: $spacer*2;
     
         &:after {
             content: '';
@@ -68,7 +67,6 @@ header {
     @include dflex;
     position: relative;
     z-index: 1;
-
     gap: $spacer * 2;
 
     li > a {
@@ -86,7 +84,8 @@ header {
         opacity: 0;
         z-index: 1;
         position: relative;
-        height: 0;
+        display: none;
+        // height: 0;
     }
 
     &--block {
@@ -104,7 +103,8 @@ header {
         &--block, &--secondary {
             visibility: visible;
             opacity: 1;
-            height: auto;
+            // height: auto;
+            display: flex;
         }
     }    
 }
@@ -125,7 +125,8 @@ header {
             &--secondary {
                 opacity: 1;
                 visibility: visible;
-                height: auto;
+                display: flex;
+                // height: auto;
             }
         }
     }
