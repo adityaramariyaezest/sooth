@@ -47,7 +47,6 @@ header {
     &-logo {
         font-weight: bold;
         font-size: $spacer * 2.5;
-        margin-left: $spacer * 2;
         flex: 1;
 
         @media(min-width:$tablet) {
@@ -67,7 +66,7 @@ header {
     @include dflex;
     position: relative;
     z-index: 1;
-    gap: $spacer * 2;
+    gap: $spacer;
 
     li > a {
         display: block;

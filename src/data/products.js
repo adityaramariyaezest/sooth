@@ -110,40 +110,80 @@ export const topRatedProducts = [
 ]
 
 
+// export const tiles = [
+//     {
+//         id: 1,
+//         image: 'acne_Cream@3x',
+//         title: 'Cacao',
+//         description: 'Lorem ipsum dolar et al'
+//     },
+//     {
+//         id: 2,
+//         image: 'psoriasis_treatment@3x',
+//         title: 'Honey',
+//         description: 'Lorem ipsum dolar et al'
+//     },
+//     {
+//         id: 3,
+//         image: 'vitiligio_Balm@3x',
+//         title: 'Mint',
+//         description: 'Lorem ipsum dolar et al'
+//     },
+//     {
+//         id: 4,
+//         image: 'ezema_dropper@3x',
+//         title: 'Coconut root',
+//         description: 'Lorem ipsum dolar et al'
+//     },
+//     {
+//         id: 5,
+//         image: 'suburn1-1@3x',
+//         title: 'Flour',
+//         description: 'Lorem ipsum dolar et al'
+//     },
+//     {
+//         id: 6,
+//         image: 'ezema_dropper@3x',
+//         title: 'Cacao',
+//         description: 'Lorem ipsum dolar et al'
+//     }
+// ];
+
+
 export const tiles = [
     {
         id: 1,
-        image: 'acne_Cream@3x',
+        image: 1,
         title: 'Cacao',
         description: 'Lorem ipsum dolar et al'
     },
     {
         id: 2,
-        image: 'psoriasis_treatment@3x',
+        image: 2,
         title: 'Honey',
         description: 'Lorem ipsum dolar et al'
     },
     {
         id: 3,
-        image: 'vitiligio_Balm@3x',
+        image: 3,
         title: 'Mint',
         description: 'Lorem ipsum dolar et al'
     },
     {
         id: 4,
-        image: 'ezema_dropper@3x',
+        image: 4,
         title: 'Coconut root',
         description: 'Lorem ipsum dolar et al'
     },
     {
         id: 5,
-        image: 'suburn1-1@3x',
+        image: 5,
         title: 'Flour',
         description: 'Lorem ipsum dolar et al'
     },
     {
         id: 6,
-        image: 'ezema_dropper@3x',
+        image: 6,
         title: 'Cacao',
         description: 'Lorem ipsum dolar et al'
     }
